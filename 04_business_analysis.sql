@@ -1,18 +1,7 @@
 /**********************************************************************
  04_business_analysis.sql
  Core business questions for the Olist marketplace, on the CLEAN schema.
- Run AFTER 03_data_cleaning.sql.
 
- Conventions
- -----------
- * "Revenue" = SUM(order_items.price)  (product revenue; freight shown
-   separately). This is the standard GMV-style measure for Olist.
- * Revenue is counted on DELIVERED orders only -- an order that was
-   cancelled/unavailable never earned money. (Cancellation and delivery
-   performance are analysed on their own in Q5 and Q9.)
- * A "customer" = customer_unique_id (the real person), NOT customer_id
-   (which Olist issues fresh for every order).
- Each query begins with the stakeholder question it answers.
 **********************************************************************/
 
 
