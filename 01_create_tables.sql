@@ -1,23 +1,7 @@
 /**********************************************************************
  01_create_tables.sql
  Olist Brazilian E-Commerce -- SQL analytics portfolio project
- --------------------------------------------------------------------
- Creates the database, the STAGING tables (raw landing zone, all text)
- and the CLEAN star-schema tables (typed dimensions & facts).
 
- Dataset : "Brazilian E-Commerce Public Dataset by Olist" (Kaggle) --
-           ~100k real orders placed on Olist marketplaces, 2016-2018.
- Target  : Microsoft SQL Server 2017 or later (uses BULK INSERT
-           FORMAT='CSV', TRY_CONVERT, window functions, DATEDIFF).
- Run me  : FIRST. Then 02 (load) -> 03 (clean) -> 04/05 (analysis).
-
- WHY a staging layer?
-   The source CSVs mix numbers, timestamps and free text, and some
-   values are blank. If we load straight into typed columns a single
-   bad value fails the whole load. So we land everything as NVARCHAR
-   first, then validate and convert in 03. This "raw -> clean" pattern
-   is exactly how ETL works in industry.
-**********************************************************************/
 
 -------------------------------------------------------------------
 -- 0. Create the database (skip this batch if your admin made it)
