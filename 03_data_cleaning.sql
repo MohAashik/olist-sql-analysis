@@ -1,15 +1,10 @@
 /**********************************************************************
  03_data_cleaning.sql
  Transform the raw STAGING data into the CLEAN star schema.
- Run AFTER 01_create_tables.sql and 02_load_data.sql.
 
- The Olist source is reasonably tidy, but real analytical work still
- needs several fixes. This script:
-   1. profiles the key data-quality issues (a quick report)
-   2. loads each clean table, fixing issues and explaining WHY
 
- The three most important cleaning decisions:
-   * product categories are in PORTUGUESE  -> translate to English via
+ The three most important cleaning steps:
+   * product categories are in PORTUGUESE  -> translated to English via
      the translation table; missing ones become 'unknown'.
    * every order has its OWN customer_id, even for the same shopper.
      The real person is customer_unique_id. We keep both so customer
