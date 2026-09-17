@@ -1,10 +1,7 @@
 /**********************************************************************
  05_advanced_analysis.sql
  Advanced analytics: window functions, ranking, RFM, Pareto, cohorts.
- Run AFTER 03 (and 04, which builds the reporting view).
-
- These queries show the analytical thinking behind the numbers -- the
- difference between a "report runner" and an analyst.
+ 
 **********************************************************************/
 USE OlistDW;
 GO
