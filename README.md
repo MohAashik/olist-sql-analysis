@@ -105,6 +105,12 @@ Raw data is never analysis-ready. Each fix is a deliberate, documented decision:
 
 ---
 
+🎥 Project walkthrough
+
+Video walkthrough — https://drive.google.com/file/d/1k-dfu2Azop6I9m8a2b9n640hq93Ye1PC/view?usp=sharing
+
+---
+
 ## 👤 Author
 
 **Mohammed Aashik** — aspiring Data Analyst (SQL · Power BI · Python · Excel)
